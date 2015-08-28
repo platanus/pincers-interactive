@@ -78,4 +78,11 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.ng_annotate.paths = [
+    "#{Rails.root.to_s}/app/assets/javascripts/",
+    "#{Rails.root.to_s}/vendor/assets/bower_components/"
+  ]
+
+  config.ng_annotate.ignore_paths = []  
 end

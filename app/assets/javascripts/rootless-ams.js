@@ -29,6 +29,4 @@
     return restmod.mixin(config);
   }
 
-  apiConfig.$inject = ['restmod', 'inflector'];
-
 })();

@@ -4,6 +4,7 @@
     .module('pincersInteractive')
     .controller('editorCtrl', editorCtrl);
 
+  /* @ngInject */
   function editorCtrl($scope, Session){
     $scope.run = run;
     $scope.configOutput = configOutput;
@@ -61,7 +62,5 @@
     }
 
   }
-
-  editorCtrl.$inject = ['$scope','Session'];
 
 })();
