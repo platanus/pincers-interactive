@@ -46,6 +46,7 @@
     }
 
     function handleError(output){
+      outputEditor.setValue(output);
     }
 
   }
