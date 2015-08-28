@@ -17,6 +17,7 @@
 
     function configEditor(_editor){
       _editor.commands.removeCommands(["gotoline", "find"]);
+      _editor.setFontSize(13);
     }
 
     function configOutput(_editor){
@@ -27,6 +28,7 @@
       _editor.setHighlightGutterLine(false);
       _editor.renderer.$cursorLayer.element.style.opacity = 0;
       _editor.commands.removeCommands(["gotoline", "find"]);
+      _editor.setFontSize(13);
     }
 
     function run(){
