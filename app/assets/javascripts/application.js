@@ -22,4 +22,8 @@
 //= require ace-builds/src-min-noconflict/mode-json.js
 //= require angular-ui-ace/ui-ace
 //= require angular-restmod/dist/angular-restmod-bundle
-//= require_tree .
+//= require rootless-ams.js
+//= require app.js
+//= require app-config.js
+//= require_tree ./models
+//= require_tree ./controllers
