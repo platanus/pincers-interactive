@@ -19,7 +19,6 @@ group :production do
   gem 'unicorn'
 end
 
-
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
@@ -29,7 +28,11 @@ group :development, :test do
   gem 'rspec-nc', require: false
 end
 
-
 group :test do
   gem 'shoulda-matchers', require: false
 end
+
+gem 'versionist'
+gem 'responders'
+gem 'active_model_serializers', '~> 0.9.3'
+gem 'simple_token_authentication', '~> 1.0'
