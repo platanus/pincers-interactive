@@ -1,1 +1,6 @@
-angular.module('pincersInteractive',['ui.ace'])
+(function(){
+
+angular
+  .module('pincersInteractive',['ui.ace', 'restmod']);
+
+})();
