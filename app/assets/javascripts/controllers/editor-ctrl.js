@@ -9,7 +9,9 @@
     $scope.configOutput = configOutput;
     var outputEditor;
 
-    $scope.editorCode = 'pincers.goto "www.nodejs.org"\nsubmit pincers.text';
+    $scope.editorCode = 'pincers.goto "www.nodejs.org"' +
+    '\nfirst_link = pincers.css("a").first' +
+    '\nsubmit first_link.to_html';
 
     function configOutput(_editor){
       outputEditor = _editor;
