@@ -7,7 +7,7 @@
       mode: 'ruby'
     }"></div>
     <div class="actions clearfix">
-      <button ng-click="run()" class="btn btn-primary pull-right">Run</button>
+      <button ng-click="run()" ng-disabled="session.$pending.length" class="btn btn-primary pull-right">{{ session.$pending.length ? 'Loading...' : 'Run' }}</button>
     </div>
   </div>
   <div class="col-md-6">
