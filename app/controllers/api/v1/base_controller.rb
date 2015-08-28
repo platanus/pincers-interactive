@@ -1,4 +1,4 @@
-class Api::V1::BaseController < ApplicationController
+class Api::V1::BaseController < ActionController::Base
   if Rails.env.production?
     include ApiErrorConcern
   end
