@@ -11,11 +11,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0'
 gem 'spring'
 gem 'unicorn-rails'
-gem 'mysql2'
 gem 'aws-sdk', '< 2'
 gem 'rails-i18n'
 gem 'rack-cors', '~> 0.4.0'
 gem 'pincers', '~> 0.4.1'
+gem 'sqlite3'
 
 group :production do
   gem 'unicorn'
