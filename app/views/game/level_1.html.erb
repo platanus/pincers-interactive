@@ -4,7 +4,8 @@
       useWrapMode : true,
       showGutter: true,
       theme:'monokai',
-      mode: 'ruby'
+      mode: 'ruby',
+      onLoad: configEditor
     }"></div>
     <div class="actions clearfix">
       <button ng-click="run()" ng-disabled="session.$pending.length" class="btn btn-primary pull-right">{{ session.$pending.length ? 'Loading...' : 'Run' }}</button>

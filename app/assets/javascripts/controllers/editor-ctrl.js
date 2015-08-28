@@ -7,11 +7,17 @@
   function editorCtrl($scope, Session){
     $scope.run = run;
     $scope.configOutput = configOutput;
-    var outputEditor;
+    $scope.configEditor = configEditor;
+
+    var codeEditor, outputEditor;
 
     $scope.editorCode = 'pincers.goto "www.nodejs.org"' +
     '\nfirst_link = pincers.css("a").first' +
     '\nsubmit first_link.to_html';
+
+    function configEditor(_editor){
+      _editor.commands.removeCommands(["gotoline", "find"]);
+    }
 
     function configOutput(_editor){
       outputEditor = _editor;
@@ -20,6 +26,7 @@
       _editor.setHighlightActiveLine(false);
       _editor.setHighlightGutterLine(false);
       _editor.renderer.$cursorLayer.element.style.opacity = 0;
+      _editor.commands.removeCommands(["gotoline", "find"]);
     }
 
     function run(){
