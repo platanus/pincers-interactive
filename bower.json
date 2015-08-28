@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "angular-ui-ace": "bower",
-    "angular": "~1.4.4"
+    "angular": "~1.4.4",
+    "angular-restmod": "~1.1.9"
   }
 }

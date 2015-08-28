@@ -18,4 +18,5 @@
 //= require ace-builds/src-min-noconflict/theme-monokai.js
 //= require ace-builds/src-min-noconflict/mode-ruby.js
 //= require angular-ui-ace/ui-ace
+//= require angular-restmod/dist/angular-restmod-bundle
 //= require_tree .
