@@ -1,8 +1,8 @@
-<div class="container" ng-app="pincersInteractive" ng-controller="editorCtrl">
+<div class="container-fluid" ng-app="pincersInteractive" ng-controller="editorCtrl">
   <div class="col-md-6">
     <div class="editor" ng-model="editorCode" ui-ace="{
       useWrapMode : true,
-      showGutter: false,
+      showGutter: true,
       theme:'monokai',
       mode: 'ruby'
     }"></div>
@@ -13,7 +13,7 @@
   <div class="col-md-6">
     <output class="output" ng-model="output" ui-ace="{
       useWrapMode : true,
-      showGutter: false,
+      showGutter: true,
       theme:'solarized_light',
       mode: 'html_ruby',
       onLoad: configOutput }"></output>

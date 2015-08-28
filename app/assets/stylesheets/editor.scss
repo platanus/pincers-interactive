@@ -1,15 +1,11 @@
-.container {
+.editor, .output {
+  height:600px;
+}
+
+.container-fluid, .actions {
   margin-top:20px;
-}
 
-.editor {
-  height:500px;
-}
-
-.output {
-  height:500px;
-}
-
-.actions {
-  margin:20px 0;
+  button {
+    min-width:100px;
+  }
 }
