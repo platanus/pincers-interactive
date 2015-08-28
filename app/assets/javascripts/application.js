@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require angular
+//= require ace-builds/src-min-noconflict/ace.js
+//= require ace-builds/src-min-noconflict/theme-monokai.js
+//= require ace-builds/src-min-noconflict/mode-ruby.js
+//= require angular-ui-ace/ui-ace
 //= require_tree .

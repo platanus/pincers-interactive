@@ -1,4 +1,8 @@
 {
   "name": "Pincers-interactive",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "angular-ui-ace": "bower",
+    "angular": "~1.4.4"
+  }
 }
