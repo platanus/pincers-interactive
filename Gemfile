@@ -19,6 +19,7 @@ gem 'pincers', '~> 0.4.1'
 
 group :production do
   gem 'unicorn'
+  gem 'therubyracer', '~> 0.12.1'
 end
 
 group :development, :test do
@@ -33,6 +34,10 @@ end
 
 group :test do
   gem 'shoulda-matchers', require: false
+end
+
+group :development do
+    gem 'negroku', '~> 2.6.0'
 end
 
 gem 'versionist'
