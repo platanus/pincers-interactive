@@ -1,8 +1,15 @@
-.editor {
+.container {
   margin-top:20px;
+}
+
+.editor {
+  height:500px;
+}
+
+.output {
   height:500px;
 }
 
 .actions {
-  margin-top:20px;
+  margin:20px 0;
 }

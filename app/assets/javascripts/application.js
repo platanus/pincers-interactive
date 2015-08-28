@@ -16,7 +16,10 @@
 //= require angular
 //= require ace-builds/src-min-noconflict/ace.js
 //= require ace-builds/src-min-noconflict/theme-monokai.js
+//= require ace-builds/src-min-noconflict/theme-solarized_light.js
 //= require ace-builds/src-min-noconflict/mode-ruby.js
+//= require ace-builds/src-min-noconflict/mode-html_ruby.js
+//= require ace-builds/src-min-noconflict/mode-json.js
 //= require angular-ui-ace/ui-ace
 //= require angular-restmod/dist/angular-restmod-bundle
 //= require_tree .

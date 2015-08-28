@@ -1,16 +1,21 @@
 <div class="container" ng-app="pincersInteractive" ng-controller="editorCtrl">
-  <div class="editor" ng-model="editorCode" ui-ace="{
+  <div class="col-md-6">
+    <div class="editor" ng-model="editorCode" ui-ace="{
       useWrapMode : true,
       showGutter: false,
       theme:'monokai',
       mode: 'ruby'
-    }">
-    function foo(items) {
-      var x = "All this is syntax highlighted";
-      return x;
-    }
+    }"></div>
+    <div class="actions clearfix">
+      <button ng-click="run()" class="btn btn-primary pull-right">Run</button>
+    </div>
   </div>
-  <div class="actions">
-    <button ng-click="run()" class="btn btn-primary pull-right">Run</button>
+  <div class="col-md-6">
+    <output class="output" ng-model="output" ui-ace="{
+      useWrapMode : true,
+      showGutter: false,
+      theme:'solarized_light',
+      mode: 'html_ruby',
+      onLoad: configOutput }"></output>
   </div>
 </div>
