@@ -15,6 +15,7 @@ gem 'mysql2'
 gem 'aws-sdk', '< 2'
 gem 'rails-i18n'
 gem 'rack-cors', '~> 0.4.0'
+gem 'pincers', '~> 0.4.1'
 
 group :production do
   gem 'unicorn'
@@ -27,6 +28,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'guard-rspec', require: false
   gem 'rspec-nc', require: false
+  gem 'thin'
 end
 
 group :test do

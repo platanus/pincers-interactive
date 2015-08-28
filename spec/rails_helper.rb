@@ -51,3 +51,13 @@ RSpec.configure do |config|
 
   config.include FactoryGirl::Syntax::Methods
 end
+
+FIXTURE_PATH = File.expand_path('../fixtures', __FILE__)
+SERVER_PORT = 9292
+
+# Start a local rack server to serve up test pages.
+@server_thread = Thread.start do
+  Rack::Handler::Thin.run Spec::Webserver.new, :Port => SERVER_PORT
+end
+
+sleep(1) # wait a sec for the server to be booted
