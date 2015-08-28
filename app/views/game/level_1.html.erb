@@ -1,1 +1,16 @@
-<div>The level 1 content</div>
+<div class="container" ng-app="pincersInteractive" ng-controller="editorCtrl">
+  <div class="editor" ng-model="editorCode" ui-ace="{
+      useWrapMode : true,
+      showGutter: false,
+      theme:'monokai',
+      mode: 'ruby'
+    }">
+    function foo(items) {
+      var x = "All this is syntax highlighted";
+      return x;
+    }
+  </div>
+  <div class="actions">
+    <button ng-click="run()" class="btn btn-primary pull-right">Run</button>
+  </div>
+</div>
