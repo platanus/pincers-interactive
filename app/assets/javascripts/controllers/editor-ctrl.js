@@ -43,7 +43,7 @@
       switch(response.result){
         case 'json':  handleJSON(response.content); break;
         case 'html':  handleHTML(response.content); break;
-        case 'error': handleError(response.content); break;
+        case 'error': handleError(response.content.message); break;
       }
     }
 
@@ -58,6 +58,7 @@
     }
 
     function handleError(output){
+      outputEditor.getSession().setMode("ace/mode/html");
       outputEditor.setValue(output);
     }
 
