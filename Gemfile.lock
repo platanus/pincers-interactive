@@ -216,7 +216,7 @@ GEM
     octokit (3.8.0)
       sawyer (~> 0.6.0, >= 0.5.3)
     orm_adapter (0.5.0)
-    pincers (0.4.2)
+    pincers (0.4.3)
       nokogiri (~> 1.6.6)
       selenium-webdriver (~> 2.45)
     pry (0.10.1)
@@ -391,7 +391,7 @@ DEPENDENCIES
   jquery-rails
   negroku (~> 2.6.0)
   ngannotate-rails
-  pincers (~> 0.4.1)
+  pincers (~> 0.4.3)
   pry-byebug
   pry-rails
   rack-cors (~> 0.4.0)
@@ -413,3 +413,6 @@ DEPENDENCIES
   unicorn
   unicorn-rails
   versionist
+
+BUNDLED WITH
+   1.10.2
